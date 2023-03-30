@@ -44,3 +44,19 @@ The weight of an animal will increase with every piece of food it eats, as follo
 Override the __repr__() method to print the information about an animal in the formats:
 •	Birds - "{AnimalType} [{AnimalName}, {WingSize}, {AnimalWeight}, {FoodEaten}]"
 •	Mammals - "{AnimalType} [{AnimalName}, {AnimalWeight}, {AnimalLivingRegion}, {FoodEaten}]"
+Test Code
+owl = Owl("Pip", 10, 10)
+print(owl)
+meat = Meat(4)
+print(owl.make_sound())
+owl.feed(meat)
+veg = Vegetable(1)
+print(owl.feed(veg))
+print(owl)
+
+Output
+Owl [Pip, 10, 10, 0]
+Hoot Hoot
+Owl does not eat Vegetable!
+Owl [Pip, 10, 11.0, 4]
+
